@@ -5,7 +5,7 @@
 **Author**: Eli, JianHui, Leonardo, Thomas, William
 
 ## 1. Use Case Diagram
-![UseCaseDiagram] (https://github.com/thomasfny/boo/blob/master/UseCaseDiagram.jpg)
+![boo] (https://github.com/thomasfny/boo/blob/master/UseCaseDiagram.jpg)
 ## 2. Use Case Descriptions
 |CreateList||
 |----------------|-----------|
