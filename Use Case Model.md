@@ -21,7 +21,7 @@
 | Pre-conditions        |The List must be created|
 | Post-conditions        |The List will be renamed|
 | Normal Enent       |1. The user selects a list and renames it <br> 2. The app acknowledges that the list has been renamed <br> 3. The app redirects user back to the main activity |
-| Exceptional Event       |1. If the same name has been used while Renaming a List <br> <space> *Inform user that the name is already existed <br> <space> *Return back to Normal Event <br><br>2. Fail to rename a List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event|
+| Exceptional Event       |1. If the same name has been used while Renaming a List <br> <space> *Inform user that the name is already existed <br> <space> *Return back to Normal Event <br><br>2. Fail to rename a List <br><space> *Inform user that the error occured <br><space> *Return back to Normal Event|
 
 |SelectList||
 |----------------|-----------|
@@ -29,7 +29,7 @@
 | Pre-conditions        |The list must be created|
 | Post-conditions        |Will redirect the user to the List Activity|
 | Normal Enent       |1. The user selects a list <br> 2. The app redirects user to the List Activity|
-| Exceptional Event       |1. If it can't goes to the alternated List Activity<br>*Inform user that the error occured<br> Return back to the Main Activity|
+| Exceptional Event       |1. If it can't goes to the alternated List Activity<br>*Inform user that the error occured<br> *Return back to the Main Activity|
 
 |DeleteList||
 |----------------|-----------|
@@ -37,7 +37,7 @@
 | Pre-conditions        |The list must be created|
 | Post-conditions        |The list will be deleted|
 | Normal Enent       |1. The user selects an existing list and deletes it<br> 2. The app ackwledges that the list has been delectd <br> 3. The app redirects the user back to the main Activity|
-| Exceptional Event       |1. Fail to create a new List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event|
+| Exceptional Event       |1. Fail to create a new List <br><space> *Inform user that the error occured <br><space> *Return back to Normal Event|
 
 |AddItem||
 |----------------|-----------|
