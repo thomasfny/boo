@@ -5,7 +5,7 @@
 **Author**: Eli, JianHui, Leonardo, Thomas, William
 
 ## 1. Use Case Diagram
-![UseCaseDiagram] (https://github.com/qc-se-spring2019/370Spring19Team3/blob/master/GroupProject/Docs/UseCaseDiagram.jpg)
+![UseCaseDiagram] (https://github.com/thomasfny/boo/blob/master/UseCaseDiagram.jpg)
 ## 2. Use Case Descriptions
 |CreateList||
 |----------------|-----------|
