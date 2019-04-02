@@ -13,31 +13,31 @@
 | Pre-conditions        |The application has to be opened|
 | Post-conditions        |A new List is created with the name given by user|
 | Normal Enent       |1. The user types a name and click on "Create" button <br> 2. The app acknowledges the list is created|
-| Exceptional Event       |1. If the same name has been used while creating new List <br> <space> *Inform user that the name is already existed <br> <space> *Return back to Normal Event <br>2. Fail to create a new List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event <br> 3. User exits the app <br><space> *Will do nothing |
+| Exceptional Event       |1. If the same name has been used while creating new List <br> <space> *Inform user that the name is already existed <br> <space> *Return back to Normal Event <br><br>2. Fail to create a new List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event <br><br> 3. User exits the app <br><space> *Will do nothing |
 
 |RenameList||
 |----------------|-----------|
 | Description        |The user rename an existing List|
 | Pre-conditions        |The List must be created|
 | Post-conditions        |The List will be renamed|
-| Normal Enent       ||
-| Exceptional Event       ||
+| Normal Enent       |1. The user selects a list and renames it <br> 2. The app acknowledges that the list has been renamed <br> 3. The app redirects user back to the main activity |
+| Exceptional Event       |1. If the same name has been used while Renaming a List <br> <space> *Inform user that the name is already existed <br> <space> *Return back to Normal Event <br><br>2. Fail to rename a List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event|
 
 |SelectList||
 |----------------|-----------|
-| Description        ||
-| Pre-conditions        ||
-| Post-conditions        ||
-| Normal Enent       ||
-| Exceptional Event       ||
+| Description        |The user select an existing List|
+| Pre-conditions        |The list must be created|
+| Post-conditions        |Will redirect the user to the List Activity|
+| Normal Enent       |1. The user selects a list <br> 2. The app redirects user to the List Activity|
+| Exceptional Event       |1. If it can't goes to the alternated List Activity<br>*Inform user that the error occured<br> Return back to the Main Activity|
 
 |DeleteList||
 |----------------|-----------|
-| Description        ||
-| Pre-conditions        ||
-| Post-conditions        ||
-| Normal Enent       ||
-| Exceptional Event       ||
+| Description        |The user delete an existing List|
+| Pre-conditions        |The list must be created|
+| Post-conditions        |The list will be deleted|
+| Normal Enent       |1. The user selects an existing list and deletes it<br> 2. The app ackwledges that the list has been delectd <br> 3. The app redirects the user back to the main Activity|
+| Exceptional Event       |1. Fail to create a new List <br><space> *Inform user that the error occured <br><space> Return back to Normal Event|
 
 |AddItem||
 |----------------|-----------|
@@ -90,9 +90,3 @@
 
 
 
-*For each use case in the use case diagram, this section should contain a description, with the following elements:*
-
-- *Requirements: High-level description of what the use case must allow the user to do.*
-- *Pre-conditions: Conditions that must be true before the use case is run.*
-- *Post-conditions Conditions that must be true once the use case is run.*
-- *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
