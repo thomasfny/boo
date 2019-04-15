@@ -1,0 +1,39 @@
+In this directory are files,
+	Item.Java
+	Category.Java
+	ComparisionItemCat.Java
+The three above files are tables defined within the Room API that Android provides.
+Within are definitions of what datatypes the tables store, and their getter/setters.
+	DatabaseAccessObject.java
+This is the interface for database operations such as insertion, deletion, and queries.
+The Room API provides declarators as you will see within the methods.
+	ShoppingListDB.java
+This class grabs the Room API to declare this as a Database object.
+It points to the Data Access Object (DAO) Database AccessObject.java file.
+This is in order for the database to know its' functionality.
+
+It is worth noting that, ShoppingListDB is an Abstract class. And that the DAO is an interface.
+
+Where I am currently stuck is making the ComparisionItemCat.java class.
+Within the Interface, all the queries exist.
+You cannot make a join on many to many tables, and trying to query something like,
+	"Chicken is Poultry" "Chicken is Meat".
+If anyone can take a look at the Android Room API, and help complete that task, message the chat.
+
+With this API, within MainActivity.java, all needed is a Room Database variable that gets initialized at launch of the program.
+So this is not included in these temporary files, nor included as an update in the current application.
+--------------------------------------------------------------------------------------------------------------------------------
+If anyone is working on the OnClickListeners or EventHandlers;
+Whenever the user clicks on the one event bringing them to their grocery options, that is where the Query in the (DAO) will fill the text boxes that are generated.
+If there is another onclick event for when you select a Category on the dropdown, the query for all items related to that Category will ideally be listed out.
+Like I said above however, ComparisionItemCat.java is not functional at the moment, and I am not sure how to get it working.
+But If you were to @Query(select * from "table_name") on this table, the output we desire in that event should occur.
+
+Insertion from the DAO can simply be called by an EventListener when the user searches and the item does not get found.
+There just needs to be a toast within the function that calls on the query to prompt an insertion after an unsuccesful search.
+--------------------------------------------------------------------------------------------------------------------------------
+Two text files,
+	items.txt
+	categories.txt
+Contain placeholder initial values for categories and items in the database, that I am not sure how to link up at launch.
+--------------------------------------------------------------------------------------------------------------------------------------
